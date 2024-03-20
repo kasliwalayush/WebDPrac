@@ -1,0 +1,33 @@
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ul{
+    list-style-type: circle;
+    
+}
+table{
+    border-width: 1ch;
+    border-color: chocolate;
+    text-align: center;
+    color: red;
+}
+h2{
+    text-align: center;
+    color: rgb(174, 226, 43);
+    font-weight: bold;
+}
+h3{
+    text-align: left;
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+ol{
+    color: aquamarine;
+    font-weight: bold;
+    font-family: serif;
+}

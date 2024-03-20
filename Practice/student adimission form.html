@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission Form</title>
+</head>
+<body>
+    <form action="">
+        <h1><u>Student Admission Form</u></h1>
+        <p>Required field are followed by *</p>
+        <h2>Personal Information</h2>
+        <p>Full Name*: <input type="text" name="Full Name" required/></p>
+        <fieldset>
+        <legend>Gender*</legend>
+            <p>
+                Male<input type="radio" name="Gender" id="male" required/>
+                Female<input type="radio" name="Gender" id="female" required/>
+            </p>
+        </fieldset>
+        <fieldset> 
+        <legend> Contact Information </legend>
+        <p>Adderss*: <textarea name="address" id="address" cols="100" rows="5" required/></textarea></p>
+        <p>Pincode*: <input type="number" name="pincode" id="pincode" required/></p>
+        <p>Email*: <input type="email" name="email" id="email" required/></p>
+        <p>Phone*:<input typr="number" name="Number", id="number"required/></p>
+        </fieldset>
+        <fieldset>
+            <legend>Education Details</legend>
+            <p>SSC %: <input type="number" min="0" max="100" step="0.01"/></p>
+            <p>HSC %: <input type="number" min="0" max="100 " step="0.01"/></p>
+        </fieldset>
+        <fieldset>
+            <legend>Admission Information</legend>
+            <p>Field*: <select name="Department" id="department" required>
+                <option value="">--Select a department Type--</option>
+                <option value="Comp">Computer Engineering</option>
+                <option value="ENTC">Entc</option>
+                <option value="Civil">Civil Engineering</option>
+                <option value="Mech">Mechanical Engineering</option></p>
+                </select>
+        </fieldset>
+        <fieldset>
+        <legend>Payment Details</legend>
+        <p>Transaction Type*: 
+            <select name="card_type" id="card_type" >
+                <option value="">--Select a Transaction Type--</option>
+                <option value="card">card</option>
+                <option value="Neft/RTGS">NEFT</option>
+                <option value="upi">UPI</option>
+                <option value="cash">Cash</option>
+            </select></p>
+        <p> Transaction ID*: <input type="number" name="card_number" id="card_number" required></p>
+        <p> Date*: <input type="date" name="exp_date" id="exp_date" required></p>
+        
+    </fieldset>
+
+        <input type="submit" value="Submit The Form">
+    </form>
+    
+</body>
+</html>
